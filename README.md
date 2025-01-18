@@ -1,36 +1,90 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Next.js Template 🚀
 
-## Getting Started
+Современный шаблон для разработки веб-приложений на Next.js с готовой архитектурой и настроенной аутентификацией.
 
-First, run the development server:
+## Технологии 🛠
+
+- Next.js 14 (App Router)
+- TypeScript
+- Tailwind CSS
+- Zustand (Управление состоянием)
+- React Hook Form
+- Zod (Валидация)
+- i18next (Интернационализация)
+- Axios (HTTP-клиент)
+
+## Установка 📦
+
+```bash
+# Клонирование репозитория
+git clone [url-репозитория]
+
+# Установка зависимостей
+npm install
+# или
+yarn install
+# или
+pnpm install
+```
+
+## Разработка 💻
+
+Для запуска проекта в режиме разработки:
 
 ```bash
 npm run dev
-# or
+# или
 yarn dev
-# or
+# или
 pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Откройте [http://localhost:3000](http://localhost:3000) в браузере.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Сборка и запуск 🏗️
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Для создания продакшн-сборки:
 
-## Learn More
+```bash
+# Сборка проекта
+npm run build
+# или
+yarn build
+# или
+pnpm build
 
-To learn more about Next.js, take a look at the following resources:
+# Запуск собранного проекта
+npm run start
+# или
+yarn start
+# или
+pnpm start
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Структура проекта 📁
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```
+src/
+├── app/          # Страницы приложения
+├── entities/     # Бизнес-сущности
+├── features/     # Функциональные модули
+├── shared/       # Переиспользуемые компоненты и утилиты
+└── widgets/      # Композиционные компоненты
+```
 
-## Deploy on Vercel
+## Особенности ✨
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- 🔐 Готовая система аутентификации
+- 🌍 Поддержка мультиязычности
+- 📱 Адаптивный дизайн
+- 🎨 Настроенный Tailwind CSS
+- 📝 TypeScript для типобезопасности
+- 🔄 Управление состоянием через Zustand
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Окружение 🌿
+
+Создайте файл `.env.local` на основе `.env.example` и заполните необходимые переменные окружения:
+
+```env
+NEXT_PUBLIC_API_URL=your_api_url
+```
