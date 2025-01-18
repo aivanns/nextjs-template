@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Основные цвета */
+  --background: #ffffff;
+  --foreground: #171717;
+  
+  /* Акцентные цвета */
+  --primary: #6366f1;
+  --primary-foreground: #ffffff;
+  
+  /* Нейтральные цвета */
+  --neutral-50: #fafafa;
+  --neutral-100: #f5f5f5;
+  --neutral-200: #e5e5e5;
+  --neutral-300: #d4d4d4;
+  --neutral-400: #a3a3a3;
+  --neutral-500: #737373;
+  --neutral-600: #525252;
+  --neutral-700: #404040;
+  --neutral-800: #262626;
+  --neutral-900: #171717;
+  
+  /* Мягкие акценты */
+  --accent-rose: #fce7f3;
+  --accent-blue: #e0f2fe;
+  --accent-green: #dcfce7;
+  --accent-yellow: #fef9c3;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #171717;
+    --foreground: #fafafa;
+    --primary: #818cf8;
+    --primary-foreground: #171717;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: var(--font-montserrat);
+}
